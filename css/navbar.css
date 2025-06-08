@@ -12,7 +12,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
+  background-color: #000000;
   color: white;
   padding: 10px 20px;
 }
@@ -23,8 +23,8 @@ body {
 }
 
 .logo {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   margin-right: 10px;
 }
 
@@ -51,12 +51,13 @@ body {
 
 .hamburger {
   display: none;
-  font-size: 24px;
+  font-size: 48px;
   cursor: pointer;
   margin-left: 20px;
 }
 
-/* Responsive Styles */
+/* Base styles remain unchanged until media query */
+
 @media (max-width: 768px) {
   .company-name {
     display: none;
@@ -64,14 +65,24 @@ body {
 
   .nav-links {
     display: none;
-    position: absolute;
-    right: 20px;
-    top: 60px;
-    background-color: #333;
     flex-direction: column;
-    gap: 15px;
-    padding: 10px 20px;
-    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 999;
+    gap: 30px;
+    font-size: 24px;
+  }
+
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
   }
 
   .nav-links.active {
@@ -80,5 +91,8 @@ body {
 
   .hamburger {
     display: block;
+    font-size: 48px;
+    cursor: pointer;
+    z-index: 1000;
   }
 }
