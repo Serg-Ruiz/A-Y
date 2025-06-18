@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Navbar</title>
     <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
   </head>
   <body>
     <nav class="navbar">
@@ -15,7 +16,7 @@
       <div class="nav-right">
         <ul class="nav-links" id="nav-links">
           <li><a href="../html/index.html">Home</a></li>
-          <li><a href="../html/about.html">About</a></li>
+          <li><a href="../html/about.html">Services</a></li>
           <li><a href="../html/contact.html">Contact</a></li>
         </ul>
         <div class="hamburger" id="hamburger">☰</div>
@@ -29,5 +30,36 @@
         navLinks.classList.toggle("active");
       });
     </script>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>A&Y POWERWASHING</h3>
+          <p>123 Main Street<br />Your City, ST 12345</p>
+          <p>Email: Aypressurewashing1010@gmail.com</p>
+          <p>Phone: 630 701 4491</p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/about">Home</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook">🌐</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="Instagram">📷</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 A&Y POWERWASHING. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
