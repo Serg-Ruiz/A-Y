@@ -1,0 +1,33 @@
+/* In navbar.css or main-content.css */
+
+.main-content-container {
+  background-image: url("../img/homebackground.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  height: 1000px;
+}
+
+.centered-logo .main-logo {
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.main-content-container h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.main-content-container p {
+  font-size: 1.2em;
+  max-width: 800px;
+}
