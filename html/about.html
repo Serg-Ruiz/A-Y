@@ -12,7 +12,7 @@
     <nav class="navbar">
       <div class="nav-left">
         <img src="../img/logo.png" alt="Logo" class="logo" />
-        <span class="company-name">A&Y Powerwashing</span>
+        <span class="company-name">A&Y PRESSURE WASHING</span>
       </div>
       <div class="nav-right">
         <ul class="nav-links" id="nav-links">
@@ -31,30 +31,77 @@
         navLinks.classList.toggle("active");
       });
     </script>
-    <div id="comparison">
-      <figure>
-        <div id="divisor"></div>
-      </figure>
-      <input
-        type="range"
-        min="0"
-        max="100"
-        value="50"
-        id="slider"
-        oninput="moveDivisor()"
-      />
-    </div>
-    <script>
-      var divisor = document.getElementById("divisor"),
-        slider = document.getElementById("slider");
-      function moveDivisor() {
-        divisor.style.width = slider.value + "%";
-      }
-    </script>
+
+    <section class="content-section">
+      <div class="text-column">
+        <h2>Why Choose A&Y Pressure Washing?</h2>
+        <p>
+          At A&Y Pressure Washing, we provide top-tier cleaning services that
+          restore the look and feel of your property. Our trained professionals
+          use safe, eco-friendly techniques to ensure a spotless finish every
+          time. Let us do the dirty work for you!
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3>Driveways</h3>
+            </div>
+            <div class="flip-card-back">
+              <p>
+                We make your driveway look brand new with high-pressure
+                cleaning.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3>Decks</h3>
+            </div>
+            <div class="flip-card-back">
+              <p>
+                Gentle yet effective cleaning that preserves your deck's
+                surface.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3>Sidings</h3>
+            </div>
+            <div class="flip-card-back">
+              <p>
+                Remove mold, mildew, and dirt from your home’s exterior walls.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3>Patios</h3>
+            </div>
+            <div class="flip-card-back">
+              <p>Restore your outdoor space for family and guests to enjoy.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-column">
-          <h3>A&Y POWERWASHING</h3>
+          <h3>A&Y PRESSURE WASHING</h3>
           <p>123 Main Street<br />Your City, ST 12345</p>
           <p>Email: Aypressurewashing1010@gmail.com</p>
           <p>Phone: 630 701 4491</p>
@@ -71,15 +118,36 @@
 
         <div class="footer-column">
           <h4>Follow Us</h4>
-          <div class="social-icons">
-            <a href="#" aria-label="Facebook">🌐</a>
-            <a href="#" aria-label="Twitter">🐦</a>
-            <a href="#" aria-label="Instagram">📷</a>
+          <div class="social-media-links">
+            <a href="">
+              <img
+                class="social-svg"
+                id="is9ym"
+                src="../img/google.png"
+                alt="Google"
+              />
+            </a>
+            <a href="">
+              <img
+                class="social-svg"
+                id="ib9ve"
+                src="../img/tiktok.png"
+                alt="TikTok"
+              />
+            </a>
+            <a href="">
+              <img
+                class="social-svg"
+                id="ie9fx"
+                src="../img/facebook.png"
+                alt="Facebook"
+              />
+            </a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 A&Y POWERWASHING. All rights reserved.</p>
+        <p>&copy; 2025 A&Y PRESSURE WASHING. All rights reserved.</p>
       </div>
     </footer>
   </body>

@@ -58,6 +58,23 @@
   color: #00aced;
 }
 
+footer .social-media-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+footer .social-media-links a img.social-svg {
+  width: 24px; /* Adjust size if needed */
+  height: 24px;
+  filter: brightness(0) invert(1); /* Makes icons appear white */
+  transition: filter 0.3s ease;
+}
+
+footer .social-media-links a:hover img.social-svg {
+  filter: brightness(0.8) invert(1); /* Slight hover effect */
+}
+
 .footer-bottom {
   text-align: center;
   margin-top: 30px;
