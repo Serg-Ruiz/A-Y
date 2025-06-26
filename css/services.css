@@ -40,9 +40,15 @@ body {
     display: grid;
     grid-template-columns: repeat(1, minmax(500px, 0.75fr));
     gap: 150px;
+    padding: 20px;
   }
 }
 
+@media (max-width: 500px) {
+  .flip-card {
+    padding: 50px;
+  }
+}
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -52,7 +58,8 @@ body {
   transform-style: preserve-3d;
 }
 
-.flip-card:hover .flip-card-inner {
+.flip-card:hover .flip-card-inner,
+.flip-card.flipped .flip-card-inner {
   transform: rotateY(180deg);
 }
 
